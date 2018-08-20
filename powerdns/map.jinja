@@ -31,6 +31,9 @@
             'backend_pipe_pkg': 'pdns-backend-pipe',
             'backend_remote_pkg': 'pdns-backend-remote',
             'backend_sqlite3_pkg': 'pdns-backend-sqlite3',
+            'recursor_pkg': 'pdns-recursor',
+            'recursor_service': 'pdns-recursor',
+            'recursor_config_file': '/etc/pdns-recursor/recursor.conf'
         },
         'Suse': {
             'pkg': 'pdns',
@@ -71,5 +74,7 @@
     'master_config': {
     },
     'slave_config': {
+    },
+    'recursor_config': {
     },
 }, merge=True) %}
