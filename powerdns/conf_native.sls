@@ -3,7 +3,7 @@
 include:
   - powerdns
 
-powerdns_config:
+conf_native:
   file.managed:
     - name: {{ powerdns.lookup.config_file }}
     - source: salt://powerdns/files/pdns_native.conf

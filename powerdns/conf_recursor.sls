@@ -4,7 +4,7 @@ include:
   - recursor
   - powerdns
 
-powerdns_config:
+conf_recursor:
   file.managed:
     - name: {{ powerdns.lookup.recursor_config_file }}
     - source: salt://powerdns/files/pdns_recursor.conf
