@@ -76,6 +76,6 @@
     'slave_config': {
     },
     'recursor_config': {
-        'local-address': '10.10.1.7'
+        'local-address': {{ salt[grains.item](fqdn_ip4, )}}
     },
 }, merge=True) %}
