@@ -1,3 +1,4 @@
+{% set host_ip = salt['grains.item']('fqdn_ip4', '') %}
 {% set powerdns = salt['pillar.get']('powerdns', {
     'lookup': salt['grains.filter_by']({
         'Debian': {
@@ -76,6 +77,6 @@
     'slave_config': {
     },
     'recursor_config': {
-        'local-address': {{ salt[grains.item](fqdn_ip4, )}}
+        'local-address': {{ host_ip }}
     },
 }, merge=True) %}
