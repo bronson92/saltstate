@@ -4,7 +4,7 @@
 
 {% if os_family in ['Debian', 'RedHat'] %}
 include:
-  - recursor_repo
+  - recursor.recursor_repo
 {% endif %}
 
 recursor:
@@ -13,7 +13,7 @@ recursor:
     - refresh_db: True
     {% if os_family in ['Debian', 'RedHat'] %}
     - require:
-      - sls: recursor_repo
+      - sls: recursor.recursor_repo
     {% endif %}
 
   service.running:
