@@ -20,5 +20,5 @@ recursor:
     - name: {{ powerdns.lookup.recursor_service }}
     - enable: True
     - require:
-      - pkg: recursor
+      - pkg: powerdns.recursor
 

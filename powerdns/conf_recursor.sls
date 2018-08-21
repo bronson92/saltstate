@@ -1,7 +1,7 @@
 {% from "powerdns/map.jinja" import powerdns with context %}
 
 include:
-  - recursor
+  - powerdns.recursor
   - powerdns
 
 conf_recursor:
@@ -13,6 +13,6 @@ conf_recursor:
     - group: root
     - mode: 600
     - require:
-      - pkg: recursor
+      - pkg: powerdns.recursor
     - watch_in:
-      - service: recursor
+      - service: powerdns.recursor
