@@ -9,7 +9,7 @@ include:
 
 recursor:
   pkg.installed:
-    - name: {{ powerdns.lookup.recursor_pkg }}
+    - name: pdns-recursor
     - refresh_db: True
     {% if os_family in ['Debian', 'RedHat'] %}
     - require:
@@ -17,7 +17,7 @@ recursor:
     {% endif %}
 
   service.running:
-    - name: {{ powerdns.lookup.recursor_service }}
+    - name: pdns-recursor
     - enable: True
     - require:
       - pkg: recursor

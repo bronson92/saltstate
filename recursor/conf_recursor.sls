@@ -6,7 +6,7 @@ include:
 
 conf_recursor:
   file.managed:
-    - name: {{ powerdns.lookup.recursor_config_file }}
+    - name: /etc/pdns-recursor/recursor.conf
     - source: salt://recursor/files/pdns_recursor.conf
     - template: jinja
     - user: root
