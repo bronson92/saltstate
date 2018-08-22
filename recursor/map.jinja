@@ -1,4 +1,4 @@
-{% ser host_ip = salt['grains.item'](fqdn_ip4) %}
+{% set host_ip = salt['grains.item'](fqdn_ip4) %}
 {% set powerdns = salt['pillar.get']('powerdns', {
     'lookup': salt['grains.filter_by']({
         'Debian': {
