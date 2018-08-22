@@ -1,7 +1,6 @@
 include:
   - recursor
-  - powerdns
-
+  
 conf_recursor:
   file.managed:
     - name: /etc/pdns-recursor/recursor.conf
