@@ -1,5 +1,3 @@
-{% from "recursor/map.jinja" import powerdns with context %}
-
 include:
   - recursor
   - powerdns

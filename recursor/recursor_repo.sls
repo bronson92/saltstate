@@ -1,5 +1,3 @@
-{% from "powerdns/map.jinja" import powerdns with context %}
-
 powerdns_recursor_repo:
   pkgrepo.managed:
     - humanname: PowerDNS_Recursor
