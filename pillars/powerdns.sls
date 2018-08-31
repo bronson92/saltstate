@@ -85,6 +85,6 @@ powerdns:
     
   recursor_config:
     forward-zones: 127.0.0.1:5300
-    local-port: 53
+    local-port: 55
 
 
