@@ -34,7 +34,7 @@ powerdns:
     slave: 'no'
     setgid: pdns
     setuid: pdns
-    experimental-json-interface: yes
+    experimental-json-interface: 'yes'
     experimental-api-key: 'root123'
     webserver: 'yes'
     webserver-port: 8081
@@ -68,9 +68,9 @@ powerdns:
   native_config:
   
     config-dir: /etc/pdns
-    daemon: yes
-    disable-tcp: no
-    guardian: yes
+    daemon: 'yes'
+    disable-tcp: 'no'
+    guardian: 'yes'
     launch: gmysql
     gmysql-host: 127.0.0.1
     gmysql-dbname: ${DB_SCHEMA}
@@ -78,7 +78,7 @@ powerdns:
     gmysql-password: ${DB_PASSWORD}
     local-address: 127.0.0.1
     local-port: 5300
-    log-dns-details: on
+    log-dns-details: 'on'
     loglevel: 4
     setgid: pdns
     setuid: pdns
